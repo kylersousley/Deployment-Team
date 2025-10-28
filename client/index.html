@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rollercoasters</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Submit New Rollercoaster</h1>
+    <form class="hidden">
+        <div class="input_container">
+            <label for="input_coaster_name">Rollercoaster Name:</label>
+            <input class="input_box" id="input_coaster_name" type="text" required>
+
+            <label for="input_coaser_manufacturer">Manufacturer:</label>
+            <input class="input_box" id="input_coaster_manufacturer" type="text" required>
+
+            <label for="input_coaster_type">Coaster Type:</label>
+            <input class="input_box" id="input_coaster_type" type="text">
+
+            <lable for="input_coaster_description">Description</lable>
+            <textarea class="input_box" id="input_coaster_description" type="text" required></textarea>
+
+            <label for="input_coaster_rating">Rating:</label>
+            <input class="input_box" id="input_coaster_rating" type="text" required>
+
+            <button id="input_submit" type="button">Submit</button>
+        </div>
+    </form>
+    <div class="container">
+        <h2>Rollercoasters</h2>
+    </div>
+    <div id="rollercoasters">
+
+    </div>
+
+</body>
+
+<script src="app.js"></script>
+
+</html>

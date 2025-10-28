@@ -1,0 +1,164 @@
+body {
+    background-color: #eff1f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #091a2c;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    background-color: #abc0d8;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+h1:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px rgb(138, 138, 138);
+}
+
+h3 {
+    font-size: 20pt;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+}
+
+.hidden {
+    display: none;
+}
+
+form {
+    width: 100%;
+    max-width: 500px;
+}
+
+form textarea {
+    min-height: 75px;
+}
+
+form input {
+    min-height: 20px;
+}
+
+.input_container {
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid rgb(177, 177, 177);
+    box-shadow: 0 0 5px rgb(155, 155, 155);
+    padding: 10px;
+    font-size: large;
+    font-weight: 700;
+}
+
+.input_box {
+    border-color: #92a4b2;
+    border-radius: 3px;
+    border-width: 1px;
+    margin-bottom: 10px;
+    padding-left: 6px;
+    padding-right: 6px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.input_box:hover {
+    background-color: rgb(242, 242, 242);
+}
+
+.edit_box {
+    border-color: #92a4b2;
+    border-radius: 3px;
+    border-width: 1px;
+    margin-bottom: 10px;
+    padding-left: 6px;
+    padding-right: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    grid-column: 2 / 4;
+}
+
+.edit_submit {
+    background-color: #38689f;
+    grid-column: 2 / 4;
+}
+
+.edit_submit:hover {
+    background-color: #447cbd;
+}
+
+.coaster_card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    background-color: #1e3d61;
+    color: #F9F7F7;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    transition: ease-in-out 0.2s;
+}
+
+.coaster_info {
+    background-color: #DBE2EF;
+    border-radius: 5px;
+    padding: 2px;
+    justify-self: center;
+    align-content: center;
+    width: 60%;
+    color: #091a2c;
+    grid-column: 1 / -1;
+}
+
+.coaster_card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 5px rgb(61, 61, 61);
+}
+
+.delButton {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+    margin-left: 5px;
+    justify-self: left;
+    cursor: pointer;
+}
+
+.editButton {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+    margin-right: 5px;
+    justify-self: right;
+    cursor: pointer;
+}
+
+button {
+    background-color:#142942;
+    color: #F9F7F7;
+    border-radius: 3px;
+    border: none;
+    padding: 5px; 
+    cursor: pointer;
+    box-shadow: 1px 1px 1px black;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #13345a;
+}
+
+button:active {
+    background-color: #305885;
+}
+
+#rollercoasters {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
