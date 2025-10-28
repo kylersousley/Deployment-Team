@@ -1,4 +1,5 @@
 console.log("connected")
+const url = "http://localhost:5000"
 
 const rollercoasters_div = document.querySelector("#rollercoasters")
 let editID = null
@@ -7,7 +8,7 @@ function load() {
     rollercoasters_div.innerHTML = ""
     reset_form()
 
-    fetch("http://localhost:5000/rollercoasters")
+    fetch(url + "/rollercoasters")
         .then(function (response) {
             response.json()
                 .then(function (data) {
@@ -79,7 +80,7 @@ function do_delete(id) {
         return
     }
 
-    fetch("http://localhost:5000/rollercoasters/" + id, {
+    fetch(url + "/rollercoasters/" + id, {
         method: "DELETE",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded"
@@ -248,8 +249,7 @@ function addNewRollercoaster() {
     console.log(rollercoaster_data)
 
     //send to api
-    let url = "http://localhost:5000/rollercoasters"
-    fetch(url, {
+    fetch(url + "/rollercoasters", {
         method: "POST",
         body: rollercoaster_data,
         headers: {
@@ -277,8 +277,7 @@ function editRollercoaster(rollercoaster) {
     rollercoaster_data += "&rating=" + encodeURIComponent(rating)
     console.log(rollercoaster_data)
 
-    let url = "http://localhost:5000/rollercoasters/" + rollercoaster.id
-    fetch(url, {
+    fetch(url + "/rollercoasters/" + rollercoaster.id, {
         method: "PUT",
         body: rollercoaster_data,
         headers: {
