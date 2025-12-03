@@ -1,5 +1,5 @@
 console.log("connected")
-const url = "http://kyler.utahtech.rocks/"
+const url = "http://kyler.utahtech.rocks"
 
 const rollercoasters_div = document.querySelector("#rollercoasters")
 let editID = null
